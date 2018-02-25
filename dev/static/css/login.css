@@ -1,0 +1,112 @@
+.login-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+	font-family: 'Roboto', sans-serif;
+	background: url("../../src/assets/images/login/background.jpg") no-repeat center;
+	background-attachment: fixed;
+}
+#form{
+	position: absolute;
+  left: 50%;
+  top: 50%;
+	width: 30%;
+	height: 50%;
+	padding: 1% 3%;
+	border: 2px ridge rgba(238, 238, 238, 0.13);
+  transform: translate(-50%,-50%);
+	color: #fff;
+	background-color: rgba(10, 10, 10, 0.77);;
+}
+#form h1{
+	font-weight: 500;
+	text-align: center;
+  margin-bottom: 3%;
+}
+#form [type="text"],
+#form [type="password"]{
+	width: 100%;
+	height: 13%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-bottom: 8%;
+	outline: none;
+	border-bottom: 1px solid rgba(238, 238, 238, 0.41);
+	background-color: transparent;
+	font-size: 15px;
+	color: #fff;
+	text-indent: 10px;
+}
+#form input::-moz-placeholder{
+    color: #ccc;
+}
+
+#form input:-ms-input-placeholder{
+    color: #ccc;
+}
+
+#form input::-webkit-input-placeholder{
+    color: #ccc;
+}
+#form p{
+	position: relative;
+	overflow: hidden;
+}
+#form [type="checkbox"]{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	border: 1px solid #fff;
+	outline: none;
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+#form [type="checkbox"]:checked::before{
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url('../../src/assets/images/login/tick.png') no-repeat ;
+	background-size: cover;
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+#form span{
+	position: relative;
+	top: 9px;
+	left: 10px;
+	font-size: 16px;
+	color: #fff;
+	float: left;
+}
+#form .tips{
+	position: absolute;
+	left: 150px;
+	color: #f00;
+}
+#form [type="button"]{
+	background-color: transparent;
+	font-size: 16px;
+	outline: none;
+	border: 1px solid rgba(238, 238, 238, 0.41);
+	color: #ccc;
+	width: 70%;
+	height: 20%;
+	margin: 10% 0 0 50%;
+  transform: translateX(-50%);
+	cursor: pointer;
+}
+#form [type="button"]:hover{
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #fff;
+}
+#form [type="button"]:active{
+	position: relative;
+	top: 2px;
+	left: 2px;
+}

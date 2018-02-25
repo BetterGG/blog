@@ -1,0 +1,171 @@
+.admin{
+  width: 100%;
+  overflow: hidden;
+}
+.admin .tools{
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+.admin .tools .search-box{
+  padding-left: 10px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.admin .tools a{
+  display: inline-block;
+  padding: 7px 15px;
+  border-radius: 5px;
+  background-color: #36B0C8;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.admin .tools .multi-delete{
+  background-color: #FF663E;
+}
+.admin table{
+  margin: 10px 5px;
+  width: 100%;
+  text-align: center;
+  /*overflow: auto;*/
+}
+.admin table td{
+  height: 40px;
+  line-height: 40px;
+}
+.admin table thead tr{
+  background-color: #fbfbfb;
+}
+.admin table tbody tr:nth-child(even){
+  background-color: #fbfbfb;
+}
+.admin table td{
+  border: 1px solid #EBEBEB;
+}
+.admin table td:first-child{
+  width: 5%;
+  text-align: left;
+  padding-left: 5px;
+}
+.admin table td:nth-child(2){
+  width: 5%;
+}
+.admin table td:nth-child(3){
+  width: 20%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.article-admin table td:last-child{
+  width: 20%;
+}
+.comment-admin tbody td:nth-child(5){
+  max-width: 120px;
+}
+.comment-admin tbody td:nth-child(5) p{
+  white-space: nowrap;
+  word-break: break-all;
+  overflow-x: scroll;
+}
+/*开关按钮组*/
+.toggle-button-wrapper{
+  height: 30px;
+}
+.button-label{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  box-shadow: #ccc 0 0 0 2px;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.circle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.button-label .text {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-shadow: 0 0 2px #ddd;
+  position: relative;
+  top: -3px;
+}
+
+.on { color: #fff; display: none; margin-left: -25px;}
+.off { color: #fff; display: inline-block; text-indent: 34px;}
+.button-label .circle{
+  left: 0;
+  transition: all 0.3s;
+}
+.button-label.articleShow .circle{
+  left: 30px;
+}
+.button-label.articleShow .on{ display: inline-block; }
+.button-label.articleShow .off{ display: none; }
+.button-label.articleShow{
+  background-color: #51ccee;
+}
+
+.admin table a{
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 5px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.admin table a.article-edit{
+  background-color: #36B0C8;
+}
+.admin table a.article-delete,
+.admin table a.comment-delete{
+  background-color: #FF663E;
+}
+.admin table a.article-check{
+  background-color: #6CBE83;
+}
+.admin .notFound{
+  height: 80px;
+  line-height: 80px;
+  font-size: 20px;
+  text-align: center;
+  color: #aaa;
+}
+/*分页*/
+.admin .page{
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.admin .page li{
+  float: left;
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.admin .page li.active{
+  border: none;
+  color: #000;
+  font-weight: bold;
+}
+.admin .page li:hover{
+  color: #000;
+  font-weight: bold;
+}

@@ -1,0 +1,49 @@
+
+  nav.navbar-default {
+    background: #fff;
+  }
+  nav.navbar-default h2 {
+    line-height: 60px;
+    padding-left: 50px;
+    margin-right: 100px;
+    text-align: center;
+    color: #87CEEB;
+  }
+  nav.navbar-default ul.navbar-nav {
+    width: 100%;
+  }
+  nav.navbar-default ul.navbar-nav a {
+    display: inline-block;
+    height: 60px;
+    min-width: 60px;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #fff;
+    text-align: center;
+    transition: all .3s linear;
+  }
+  nav.navbar-default ul.navbar-nav a.focus,
+  nav.navbar-default ul.navbar-nav a:hover {
+    background: #87CEEB;
+    color: #fff;
+  }
+  @media screen and (max-width: 600px) {
+    nav.navbar-default form {
+      display: none;
+    }
+  }
+  nav.navbar-default form {
+    padding: 5px 0;
+    text-align: center;
+  }
+  nav.navbar-default form input {
+    padding-left: 20px;
+  }
+  nav.navbar-default .admin-entry{
+    margin: 4px 5px 0 0;
+    font-size: 16px;
+  }
+  nav.navbar-default .admin-entry:hover{
+    text-decoration: underline;
+  }

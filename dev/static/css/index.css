@@ -1,0 +1,108 @@
+.section-main,
+.aside-bar {
+  margin: 10px 0;
+}
+.section-main {
+  padding: 15px 1% 10px;
+}
+
+.section-main .passage-newest .newest{
+  color: #FE5187;
+}
+.section-main .article-list .article-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+.section-main .article-list .article-item .article-link {
+  display: block;
+}
+.section-main .article-list .article-item .article-link img {
+  width: 100%;
+  height: 230px;
+  transition: opacity .3s linear;
+}
+.section-main .article-list .article-item .article-meta {
+  margin: 15px 0 10px;
+}
+.section-main .article-list .article-item .article-meta .category {
+  color: #67BDC5;
+}
+.section-main .article-list .article-item .article-meta .public-date {
+  color: #bbb;
+}
+.section-main .article-list .article-item .article-title {
+  margin-bottom: 15px;
+  height: 2em;
+  overflow: hidden;
+}
+.section-main .article-list .article-item .article-title a {
+  transition: color .3s linear;
+}
+.section-main .article-list .article-item .article-excerpt {
+  font-size: 15px;
+  line-height: 1.5em;
+  height: 4.5em;
+  overflow: hidden;
+  color: #999;
+}
+.section-main .article-list .article-item:nth-child(odd) {
+  padding-right: 10px;
+}
+.section-main .article-list .article-item:nth-child(even) {
+  padding-left: 10px;
+}
+.section-main .article-list .article-item:hover .article-link img{
+  opacity: 0.8;
+}
+.section-main .article-list .article-item:hover .article-title a {
+  color: #67BDC5;
+}
+
+.aside-bar {
+  padding-top: 15px;
+}
+.aside-bar .aside-articles .aside-module h4 {
+  margin-bottom: 10px;
+}
+.aside-bar .aside-articles .aside-module ul,
+.aside-bar .aside-articles .aside-module ol {
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.aside-bar .aside-articles .aside-module ul li,
+.aside-bar .aside-articles .aside-module ol li {
+  line-height: 2em;
+}
+.aside-bar .aside-articles .aside-module ul li a,
+.aside-bar .aside-articles .aside-module ol li a {
+  transition: all .3s linear;
+}
+.aside-bar .aside-articles .aside-module ul li a:hover,
+.aside-bar .aside-articles .aside-module ol li a:hover {
+  text-decoration: underline;
+  color: #87CEEB;
+}
+.aside-bar .aside-articles .article-recommend .recommend {
+  color: #72B734;
+}
+.aside-bar .aside-articles .article-recommend .recommend-items {
+  list-style: disc;
+}
+.aside-bar .aside-articles .article-top .top {
+  color: #87CEEB;
+}
+.aside-bar .aside-articles .article-top .top-items {
+  list-style: decimal;
+}
+.aside-bar .aside-articles .article-top .top-items li {
+  border-bottom: 1px solid #ccc;
+}
+.aside-bar .aside-articles .links .friendship {
+  color: #F17B6B;
+}
+.aside-bar .aside-articles .links .friendship-links {
+  background-color: #F3F3F3;
+  text-align: center;
+  padding: 15px;
+  border-radius: 50%;
+}
